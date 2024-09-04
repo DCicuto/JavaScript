@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style> 
+        body {
+            background-color: #b5a2fa;
+            color: #090614;
+            font: normal 17pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1> Inciando estudos com DOM</h1>
+    <p>Bem simples para começar</p>
+    <p>Estou aprendendo a manipular o <strong>DOM</strong></p>
+    <div id  = "msg">Clique em mim</div>
+    <div class = "msg2">Clique em mim também</div>
+   
+
+    <script>
+        //Acessando os elementos do DOM por marca/tagName
+        var corpo = window.document.body; // seleciona o corpo do documento
+        var h1 = document.getElementsByTagName('h1')[0]; // seleciona o primeiro h1
+        var p1 = document.getElementsByTagName('p')[0]; // seleciona o primeiro parágrafo
+        var p2 = document.getElementsByTagName('p')[0]; // seleciona o segundo parágrafo
+        
+        corpo.style.background = '#090614'; // altera a cor de fundo do corpo
+        h1.style.color = '#b5a2fa'; // altera a cor do texto do h1
+        p1.style.color = '#b5a2fa'; // altera a cor do texto do primeiro parágrafo
+        p2.style.color = '#b5a2fa'; // altera a cor do texto do segundo parágrafo
+
+        //Acessando os elementos do DOM por ID
+        var msg = document.getElementById('msg'); // seleciona o elemento com id msg
+        msg.style.background = '#b5a2fa'; // altera a cor de fundo do elemento
+        msg.style.color = '#090614'; // altera a cor do texto do elemento
+        msg.style.width = '200px'; // altera a largura do elemento
+        msg.style.height = '40px'; // altera a altura do elemento
+        msg.style.textAlign = 'center'; // alinha o texto ao centro
+        msg.style.lineHeight = '40px'; // alinha o texto verticalmente
+        msg.style.border = '1px solid #090614'; // adiciona uma borda ao elemento
+        msg.style.cursor = 'pointer'; // altera o cursor do mouse ao passar sobre o elemento
+
+        //Acessando os elementos do DOM querySelector
+        var id = window.document.querySelector('div#msg'); // seleciona o elemento com id msg
+        var classe = window.document.querySelector('div.msg2'); // seleciona 
+
+
+
+
+
+
+    
+    </script>
+</body>
+</html>

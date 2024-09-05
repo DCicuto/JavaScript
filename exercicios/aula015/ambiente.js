@@ -1,10 +1,10 @@
 let num = [12, 4, 1, 9, 8, 7]
 console.log(`Nosso vetor é: ${num}`)
 
-//Para ordenar os valores do vetor, usamos o num.sort() que é um metodo interno que ordena os valores do vetor.
+//Para ordenar os valores do vetor, usamos o num.sort() que é um metodo interno.
 num.sort()
 
-//para acrescentar um valor no vetor sem perder os valores anteriores, usamos o num.push() que é um metodo interno que acrescenta valores a um vetor. 
+//para acrescentar um valor no vetor sem perder os valores anteriores, usamos o num.push() que é um metodo interno.
 num.push(0)
 
 //Para sabermnos o tamanho do vetor, usamos o num.length (length nào é ummetodo é um atributo que mostra o tamanho do vetor)

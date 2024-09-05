@@ -1,0 +1,6 @@
+//função dentro de uma variavel, chamada de função anônima
+
+let v = function(x) {
+    return x * 2
+}
+console.log(v(5)) // 10

@@ -1,0 +1,125 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'proggy';
+    src: url('../fontes/ProggySquareConsole.fon') format('truetype');
+}
+
+/* CSS Document */
+
+:root { /* variáveis globais de cor e fonte */
+    --cor0: #1f1d29;
+    --cor1: #366990;
+    --cor2: #D9BF8F;
+    --cor3: #da7d0b;
+    --cor4: #401201;
+    --cor5: #cbbcff;
+    --cor6: #3d355a;
+    --cor7: #5bac9e;
+
+    --fonte-padrao: Verdana, Arial, helvetica, sans-serif;
+    --fonte-destaque: bebas neue, sans-serif;
+    --fonte-mono: proggy, monospace;
+}
+
+body{
+    font: normal 16px/1.5 Arial, sans-serif;
+    background-color: var(--cor1);
+
+}
+
+header{
+    color: #cbbcff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-destaque);
+    
+}
+
+.numero-label {
+
+    font-family: var(--fonte-mono); /* Fonte padrão */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Margem inferior */
+    
+}
+
+.numero-label input[type="number"] {
+    margin-top: 5px; /* Margem superior para o campo de entrada */
+}
+
+section{
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 15px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #2523235d;
+}
+
+select#flista{
+    width: 37%;
+    background-color: #1d4f5ccf;
+    font-family: var(--fonte-mono);
+    font-size: 15px;
+    border: 2px solid #1d4f5c;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    
+}
+
+select#flista option{
+    background-color: #13323acf;
+    color: aliceblue;
+    border-radius: 3px;
+
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 2px;
+    margin: 7px 0;
+    font-family: var(--fonte-mono);
+    font-size: 15px;
+    border: 2px solid #1d4f5c;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+input[type="number"]:focus {
+    border-color: #163d47;
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+input[type="button"] {
+    background-color: #1d4f5c;
+    color: white;
+    font-family: var(--fonte-mono);
+    font-size: 15px;
+    padding: 3px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #163d47;
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+
+}
